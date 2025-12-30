@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ENESTY HERDIYANTI</title>
-    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -12,11 +13,12 @@
         <div class="logo">PORTFOLIO</div>
         <ul class="nav-links">
             <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Certifikate</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certificate">Certificate</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="menu-toggle">&#9776;</div>
     </nav>
@@ -30,8 +32,404 @@
             </div></div>
         <div class="hero-img">
             <img src="images/foto.png" alt="Profile" class="profile-img">
-        </div></div></section>
-    <script src="js\script.js"></script>
+        </div></section>
+    <!--About Section-->
+    <section id="about" class="about">
+        <div class="about-img">
+        <img src="images/foto1.png" alt="Profile" class="profile-img"></div>
+        <div class="about-text">
+        <h2>About Me</h2>
+        <p>I am a recent graduate with a degree in Physics Education from Universitas Pendidikan Indonesia. My passion lies in data analysis and front-end development, where I enjoy creating visually appealing and user-friendly web applications. I am eager to apply my skills and knowledge in a professional setting and contribute to innovative projects.</p>
+        </div></section>
+    <!--Skills Section-->
+    <section id="skills" class="skills">
+        <h3>My Skills</h3>
+        <div class="tabs">
+        <button class="tab active" data-tab="soft-skills">Soft Skills</button>
+        <button class="tab" data-tab="hard-skills">Hard Skills</button></div>
+         <div class="tab-content active" id="soft-skills">
+            <div class="soft-grid">
+            <div class="soft-card">Teamwork</div>
+            <div class="soft-card">Problem Solving</div>
+            <div class="soft-card">Leadership</div>
+            <div class="soft-card">Communication</div>
+            <div class="soft-card">Adaptability</div>
+            <div class="soft-card">Analitycal Thinking</div>
+        </div></div>
+        <div class="tab-content" id="hard-skills">
+            <div class="hard-grid">
+            <div class="hard-card">
+                <p>Canva</p>
+                <img src="images\image 1.png" alt="Canva" class="skill-icon">
+            </div>
+            <div class="hard-card">
+                <p>Excel</p>
+                <img src="images\image 2.png" alt="Excel" class="skill-icon">
+            </div>
+            <div class="hard-card">
+                <p>RapidMiner</p>
+                <img src="images\image 3.png" alt="RapidMiner" class="skill-icon">
+            </div>
+            <div class="hard-card">
+                <p>Python</p>
+                <img src="images\image 4.png" alt="Python" class="skill-icon">
+            </div>
+            <div class="hard-card">
+                <p>VSCode</p>
+                <img src="images\image 5.png" alt="VSCode" class="skill-icon">
+            </div>
+            <div class="hard-card">
+                <p>HTML</p>
+                <img src="images\image 6.png" alt="HTML" class="skill-icon">
+            </div>
+            <div class="hard-card">
+                <p>CSS</p>
+                <img src="images\image 7.png" alt="CSS" class="skill-icon">
+            </div><div class="hard-card">
+                <p>JavaScript</p>
+                <img src="images\image 8.png" alt="JavaScript" class="skill-icon">
+            </div>
+        </div></section>
+    <!--Experience Section-->
+    <section id="experience" class="experience">
+        <h3>My Experience</h3>
+        <div class="exp-grid">
+            <!-- Card 1 -->
+            <div class="exp-card" onclick="openModal('modal-exp1')">
+            <h4>Associate Data Scientist Course</h4>
+            <p><strong>Digital Talent Scholarship</strong> | July - Sept 2025</p>
+            <p class="click-hint">Click to see more</p>
+            </div>
+            <!-- Card 2 -->
+            <div class="exp-card" onclick="openModal('modal-exp2')">
+            <h4>MBKM Kampus Mengajar Batch 5</h4>
+            <p><strong>SMPIT Al-Kautsar Kudus</strong> | Feb - June 2023</p>
+            <p class="click-hint">Click to see more</p>
+            </div>
+            <!-- Card 3 -->
+            <div class="exp-card" onclick="openModal('modal-exp3')">
+            <h4>Ikatan Mahasiswa Kudus-Unnes (IMAKU)</h4>
+            <p><strong>Head of Community Social Division</strong> | Jan - Dec 2022</p>
+            <p class="click-hint">Click to see more</p>
+            </div>
+            <!-- Card 4 -->
+            <div class="exp-card" onclick="openModal('modal-exp4')">
+            <h4>Seminar Nasional Pekan Ilmiah Fisika XXXIII</h4>
+            <p><strong>Public Relations Committee Member</strong> | July - Sept 2022</p>
+            <p class="click-hint">Click to see more</p>
+            </div>
+            <!-- Card 5 -->
+            <div class="exp-card" onclick="openModal('modal-exp5')">
+            <h4>ISC (Imaku Sport Competition) 2022</h4>
+            <p><strong>Public Relations</strong> | May - July 2022</p>
+            <p class="click-hint">Click to see more</p>
+            </div>
+        </div>
+            <!--Modal 1-->
+            <div id="modal-exp1" class="modal-experience-modal">
+                <div class="modal-content exp-layout">
+                    <span class="close" onclick="closeModal('modal-exp1')">&times;</span>
+                    <div class="exp-text">
+                    <h4>Associate Data Scientist Course</h2>
+                    <p><strong>Digital Talent Scholarship</strong> | July - Sept 2025</p>
+                    <ul>
+                        <li>Completed comprehensive training on data science concepts and techniques.</li>
+                        <li>Gained proficiency in Python programming for data analysis and visualization.</li>
+                        <li>Utilized RapidMiner for data mining and predictive analytics.</li>
+                        <li>Worked on real-world projects to apply learned skills in practical scenarios.</li>
+                    </ul>
+                    </div>
+                <div class="exp-gallery">
+                    <img src="images\foto.png" alt="Activity 1">
+                    <img src="images\foto1.png" alt="Activity 2">
+                    <img src="images\image 1.png" alt="Activity 3">
+                    <img src="images\image 2.png" alt="Activity 4">
+                </div></div></div>
+            <!--Modal 2-->
+            <div id="modal-exp2" class="modal-experience-modal">
+                <div class="modal-content exp-layout">
+                    <span class="close" onclick="closeModal('modal-exp2')">&times;</span>
+                    <div class="exp-text">
+                    <h4>MBKM Kampus Mengajar Batch 5</h4>
+                    <p><strong>SMPIT Al-Kautsar Kudus</strong> | Feb - June 2023</p>
+                    <ul>
+                        <li>Improved students’ literacy and numeracy through creative teaching methods.</li>
+                        <li>Integrated technology into classroom activities such as learning digital tools (google slide, google spreadsheet and canva).</li>
+                        <li>Assisted in managing school and teacher administrative tasks.</li>
+                    </ul>
+                    </div>
+                    <div class="exp-gallery">
+                    <img src="images\experience21.jpg" alt="Activity 1">
+                    <img src="images\experience22.jpg" alt="Activity 2">
+                    <img src="images\experience23.jpg" alt="Activity 3">
+                    <img src="images\experience24.jpg" alt="Activity 4">
+                </div></div></div>
+            <!--Modal 3-->
+            <div id="modal-exp3" class="modal-experience-modal">
+                <div class="modal-content exp-layout">
+                    <span class="close" onclick="closeModal('modal-exp3')">&times;</span>
+                    <div class="exp-text">
+                    <h4>Ikatan Mahasiswa Kudus-Unnes (IMAKU)</h4>
+                    <p><strong>Head of Community Social Division </strong> | Jan - Dec 2022</p>
+                    <p>I was responsible for planning and leading various humanitarian activities and impactful programs, including a flood relief fundraising campaign, street food distribution, and visits to orphanages. As part of these efforts, the organization  partnered with Dompet Dhuafa to organize a community-focused event for orphans, aimed at bringing joy while fostering empathy and social awareness.</p>
+                    </div>
+                    <div class="exp-gallery">
+                    <img src="images\experience31.jpg" alt="Activity 1">
+                    <img src="images\experience32.jpg" alt="Activity 2">
+                    <img src="images\experience33.jpg" alt="Activity 3">
+                    <img src="images\experience34.jpg" alt="Activity 4">
+                </div></div></div>
+            <!--Modal 4-->
+            <div id="modal-exp4" class="modal-experience-modal">
+                <div class="modal-content exp-layout">
+                    <span class="close" onclick="closeModal('modal-exp4')">&times;</span>
+                    <div class="exp-text">
+                    <h4>Seminar Nasional Pekan Ilmiah Fisika XXXIII</h4>
+                    <p><strong>Public Relations Committee Member</strong> | July - Sept 2022</p>
+                    <p>As part of the public relations team, I built relationships and maintained communication with speakers, participants, and media partners. The event was successfully attended by over 250 participants and secured partnerships with more than 10 media partners. I was also responsible for promoting the event through both online and offline channels.</p>
+                    </div>
+                    <div class="exp-gallery">
+                    <img src="images\experience41.jpeg" alt="Activity 1">
+                    <img src="images\experience42.jpeg" alt="Activity 2">
+                    <img src="images\experience43.jpeg" alt="Activity 3">
+                </div></div></div>
+            <!--Modal 5-->
+            <div id="modal-exp5" class="modal-experience-modal">
+                <div class="modal-content exp-layout">
+                    <span class="close" onclick="closeModal('modal-exp5')">&times;</span>
+                    <div class="exp-text">
+                    <h4>ISC (Imaku Sport Competition) 2022</h4>
+                    <p><strong>Public Relations</strong> | May - July 2022</p>
+                    <p>I managed communication between the committee and participants about event information, made social media captions and publication schedules, and promoted the competition to schools around Kudus. The event was joined by 16 futsal teams from different schools.</p>
+                    </div>
+                    <div class="exp-gallery">
+                    <img src="images\experience51.jpeg" alt="Activity 1">
+                    <img src="images\experience52.jpeg" alt="Activity 2">
+                    <img src="images\experience53.jpeg" alt="Activity 3">
+                    <img src="images\experience54.jpeg" alt="Activity 4">
+                    <img src="images\experience55.jpeg" alt="Activity 5">
+                    <img src="images\experience56.jpeg" alt="Activity 6">
+                </div></div></div>
+    </section>
+    <!--Projects Section-->
+    <section id="projects" class="projects">
+        <h3>My Projects</h3>
+        <div class="proj-grid">
+            <!-- Project Card 1 -->
+            <div class="proj-card" onclick="openModal('modal-proj1')">
+            <img src="images/project2.png" alt="Online Exam">
+            <div class="proj_text">
+                <h4>Online Exam Siswa</h4>
+                <p>Sistem ujian online berbasis web dengan login siswa.</p>
+            <div class="tech-icons">
+                <img src="icons/html.png" alt="HTML">
+                <img src="icons/css.png" alt="CSS">
+                </div></div></div>
+            <!-- Project Card 2 -->
+            <div class="proj-card" onclick="openModal('modal-proj2')">
+            <img src="images/projectnya.png" alt="Data Analysis">
+            <div class="proj_text">
+                <h4>Data Analysis of Online Transportation</h4>
+                <p>Conducted data analysis using Excel and RapidMiner.</p>
+                <div class="tech-icons">
+                <img src="images/image2.png" alt="Excel">
+                <img src="images/image3.png" alt="RapidMiner">
+                </div></div></div>
+        </div>
+        <!-- Modal Project 1 -->
+        <div id="modal-proj1" class="modal-proj-modal">
+        <div class="modal-content-proj">
+            <div class="modal-header">
+                <span>ID Project Detail Overlay</span>
+                <button class="close-btn" onclick="closeModal('modal-proj1')">&times;</button>
+            </div>
+            <div class="modal-inner-body">
+                <h4>Online Exam Siswa</h4>
+                <img src="images/project2.png" alt="Online Exam">
+                <div class="modal-desc">
+                    <p>Aplikasi Online Exam Siswa adalah sistem ujian berbasis web yang aman dan efisien...</p>
+                    <div class="tech-stack">
+                        <img src="icons/html.png" alt="HTML">
+                        <img src="icons/css.png" alt="CSS">
+                        <img src="icons/js.png" alt="JS">
+                    </div>
+                </div>
+            </div>
+        </div></div>
+        <!-- Modal Project 2 -->
+        <div id="modal-proj2" class="modal-proj-modal">
+        <div class="modal-content-proj">
+            <div class="modal-header">
+                <span>ID Project Detail Overlay</span>
+                <button class="close-btn" onclick="closeModal('modal-proj2')"> &times;</button>
+            </div>
+            <div class="modal-inner-body">
+                <h4>Data Analysis Detail</h4>
+                <img src="images/projectnya.png" alt="Data Analysis">
+                <div class="modal-desc">
+                    <p>Analisis tren perilaku pengguna transportasi online menggunakan dataset Excel.</p>
+                    <div class="tech-stack">
+                        <img src="icons/html.png" alt="HTML">
+                        <img src="icons/css.png" alt="CSS">
+                        <img src="icons/js.png" alt="JS">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!--Certificate Section-->
+    <section id="certificate" class="certificate">
+        <h3>My Certificates</h3>
+        <div class="cert-filter">
+        <button class="filter-btn active" onclick="filterCert('all')">All</button>
+        <button class="filter-btn" onclick="filterCert('certification')">Certification</button>
+        <button class="filter-btn" onclick="filterCert('bootcamp')">Bootcamp</button>
+        <button class="filter-btn" onclick="filterCert('organisasi')">Organisasi</button>
+        <button class="filter-btn" onclick="filterCert('intern')">Intern</button>
+        </div>
+    <div class="cert-grid">
+        <!-- Certificate Cards 1 -->
+        <div class="cert-card" data-category="certification" onclick="window.open('https://link-sertifikat-kamu.pdf', '_blank')">
+            <img src="images/certificate1.png" alt="Cert">
+            <div class="cert-body">
+                <h3>Junior/Associate Data Scientist</h3>
+                <p class="issuer">BNSP</p>
+                <p class="cert-date"><i class="far fa-calendar-alt"></i> October 2025-October 2028</p>
+                <span class="badge certification">Certification</span>
+            </div>
+        </div>
+        <!-- Certificate Cards 2 -->
+        <div class="cert-card" data-category="bootcamp" onclick="window.open('https://www.dicoding.com/certificates/L4PQ2L0N2ZO1', '_blank')">
+            <img src="images/certificate2.jpeg" alt="Cert">
+            <div class="cert-body">
+                <h3>Belajar Machine Learning untuk Pemula</h3>
+                <p class="issuer">Dicoding Indonesia</p>
+                <p class="cert-date"><i class="far fa-calendar-alt"></i> December 2025-December 2028</p>
+                <p class="view-link">View Certificate <i class="fas fa-external-link-alt"></i></p>
+                <span class="badge bootcamp">Bootcamp</span>
+            </div>
+        </div>
+        <!-- Certificate Cards 3 -->
+        <div class="cert-card" data-category="bootcamp" onclick="window.open('https://www.dicoding.com/certificates/EYX4K5VK6PDL', '_blank')">
+            <img src="images/certificate3.png" alt="Cert">
+            <div class="cert-body">
+                <h3>Memulai Pemrograman dengan Python</h3>
+                <p class="issuer">Dicoding Indonesia</p>
+                <p class="cert-date"><i class="far fa-calendar-alt"></i> December 2025-December 2028</p>
+                <p class="view-link">View Certificate <i class="fas fa-external-link-alt"></i></p>
+                <span class="badge bootcamp">Bootcamp</span>
+            </div>
+        </div>
+        <!-- Certificate Cards 4 -->
+        <div class="cert-card" data-category="bootcamp" onclick="window.open('https://www.dicoding.com/certificates/KEXL2JW10ZG2', '_blank')">
+            <img src="images/certificate4.png" alt="Cert">
+            <div class="cert-body">
+                <h3>Belajar Dasar Structured Query Language (SQL)</h3>
+                <p class="issuer">Dicoding Indonesia</p>
+                <p class="cert-date"><i class="far fa-calendar-alt"></i> December 2025-December 2028</p>
+                <p class="view-link">View Certificate <i class="fas fa-external-link-alt"></i></p>
+                <span class="badge bootcamp">Bootcamp</span>
+            </div>
+        </div>
+        <!-- Certificate Cards 5 -->
+        <div class="cert-card hidden-cert" data-category="bootcamp" onclick="window.open('https://www.dicoding.com/certificates/6RPNG9188Z2M', '_blank')">
+            <img src="images/certificate5.jpeg" alt="Cert">
+            <div class="cert-body">
+                <h3>Belajar Dasar Data Science</h3>
+                <p class="issuer">Dicoding Indonesia</p>
+                <p class="cert-date"><i class="far fa-calendar-alt"></i> November 2025-November 2028</p>
+                <p class="view-link">View Certificate <i class="fas fa-external-link-alt"></i></p>
+                <span class="badge bootcamp">Bootcamp</span>
+            </div>
+        </div>
+        <!-- Certificate Cards 6 -->
+        <div class="cert-card hidden-cert" data-category="bootcamp" onclick="window.open('https://www.dicoding.com/certificates/N9ZO2N2Q6PG5', '_blank')">
+            <img src="images/certificate6.png" alt="Cert">
+            <div class="cert-body">
+                <h3>Belajar Dasar AI</h3>
+                <p class="issuer">Dicoding Indonesia</p>
+                <p class="cert-date"><i class="far fa-calendar-alt"></i> November 2025-November 2028</p>
+                <p class="view-link">View Certificate <i class="fas fa-external-link-alt"></i></p>
+                <span class="badge bootcamp">Bootcamp</span>
+            </div>
+        </div>
+        <!-- Certificate Cards 7 -->
+        <div class="cert-card hidden-cert" data-category="bootcamp" onclick="window.open('https://drive.google.com/file/d/1YqKCYJmNi3z6JjE7dIvydklMRij5yccz/view?usp=sharing', '_blank')">
+            <img src="images/certificate7.png" alt="Cert">
+            <div class="cert-body">
+                <h3>Python for Data Professional Beginner</h3>
+                <p class="issuer">DQLab</p>
+                <p class="cert-date"><i class="far fa-calendar-alt"></i> December 2025</p>
+                <p class="view-link">View Certificate <i class="fas fa-external-link-alt"></i></p>
+                <span class="badge bootcamp">Bootcamp</span>
+            </div>
+        </div>
+        <!-- Certificate Cards 8 -->
+        <div class="cert-card hidden-cert" data-category="bootcamp" onclick="window.open('https://drive.google.com/file/d/1EIeGoZnIw8qc1oVYYVM8LAnNqvviiZlT/view?usp=sharing', '_blank')">
+            <img src="images/certificate8.png" alt="Cert">
+            <div class="cert-body">
+                <h3>Python Fundamental for Data Science</h3>
+                <p class="issuer">DQLab</p>
+                <p class="cert-date"><i class="far fa-calendar-alt"></i> December 2025</p>
+                <p class="view-link">View Certificate <i class="fas fa-external-link-alt"></i></p>
+                <span class="badge bootcamp">Bootcamp</span>
+            </div>
+        </div>
+        <!-- Certificate Cards 9 -->
+        <div class="cert-card hidden-cert" data-category="bootcamp" onclick="window.open('https://drive.google.com/file/d/139rdwXKRaTF8BP3BalgpwQZJsgc-xRe-/view?usp=sharing', '_blank')">
+            <img src="images/certificate9.png" alt="Cert">
+            <div class="cert-body">
+                <h3>Associate Data Scientist Certification</h3>
+                <p class="issuer">Pusat Pengembangan Talenta Digital</p>
+                <p class="cert-date"><i class="far fa-calendar-alt"></i> September 2025</p>
+                <p class="view-link">View Certificate <i class="fas fa-external-link-alt"></i></p>
+                <span class="badge bootcamp">Bootcamp</span>
+            </div>
+        </div>
+        <!-- Certificate Cards 10 -->
+        <div class="cert-card hidden-cert" data-category="bootcamp" onclick="window.open('https://drive.google.com/file/d/1K1vDLosnwhe7VW1mfY0zqJAqRheFT4kr/view?usp=sharing', '_blank')">
+            <img src="images/certificate10.png" alt="Cert">
+            <div class="cert-body">
+                <h3>Intermediate Data Science</h3>
+                <p class="issuer">Pusat Pengembangan Talenta Digital</p>
+                <p class="cert-date"><i class="far fa-calendar-alt"></i> August 2025</p>
+                <p class="view-link">View Certificate <i class="fas fa-external-link-alt"></i></p>
+                <span class="badge bootcamp">Bootcamp</span>
+            </div>
+        </div>
+        <!-- Certificate Cards 11 -->
+        <div class="cert-card hidden-cert" data-category="bootcamp" onclick="window.open('https://drive.google.com/file/d/1KTE9LtpNTVcwmVoCq_f3K9pGpeX7ANZo/view?usp=sharing', '_blank')">
+            <img src="images/certificate11.png" alt="Cert">
+            <div class="cert-body">
+                <h3>Fundamental Data Science</h3>
+                <p class="issuer">Pusat Pengembangan Talenta Digital</p>
+                <p class="cert-date"><i class="far fa-calendar-alt"></i> July 2025</p>
+                <p class="view-link">View Certificate <i class="fas fa-external-link-alt"></i></p>
+                <span class="badge bootcamp">Bootcamp</span>
+            </div>
+        </div> <div class="see-more-container" style="text-align: center; margin-top: 30px; padding-bottom: 20px;">
+            <button id="see-more-btn" class="filter-btn active" onclick="toggleCerts()">See More</button>
+        </div>
+    </section>
+    <!--Contact Section-->
+    <section class="contact" id="contact">
+    <h3>Contact Me</h3>
+    <p>Feel free to reach out to me through any of the platforms below!</p>
+    <div class="contact-container">
+        <a href="https://www.linkedin.com/in/enesthrdyt" target="_blank" class="contact-box">
+            <i class="fab fa-linkedin"></i>
+            <span>LinkedIn</span>
+        </a>
+        <a href="https://instagram.com/ensty.hh" target="_blank" class="contact-box">
+            <i class="fab fa-instagram"></i>
+            <span>Instagram</span>
+        </a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=enesty02@gmail.com" class="contact-box">
+            <i class="fas fa-envelope"></i>
+            <span>Gmail</span>
+        </a>
+    </div></section>
+        <script src="js/script.js"></script>
 </body>
-
 </html>

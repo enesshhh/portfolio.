@@ -1,12 +1,11 @@
 body {
     margin : 0;
-    padding: 0;
+    padding: 10px;
     font-family: Arial, sans-serif;
     color: white;
     background: linear-gradient(to bottom right, #ff9a9e, #a18cd1);
     min-height: 100vh;
 }
-
 .navbar {
     color: black;
     padding: 10px 20px;
@@ -16,7 +15,7 @@ body {
 }
 .logo {
     font-size: 24px;
-    font-weight: bold;
+    font-weight: bold
 }
 .nav-links {
     list-style: none;
@@ -27,23 +26,28 @@ body {
 .nav-links li a {
     margin-left: 20px;
 }
-
 .nav-links li a.active,
 .nav-links li a:hover {
     text-decoration: underline;
 }
-
 .menu-toggle {
     display: none;
     font-size: 24px;
     cursor: pointer;
+    color: white;
 }
 @media (max-width: 768px) {
     .nav-links {
         display: none;
         flex-direction: column;
-        width: 100%;
-        background-color: #333;
+        width: auto;
+        background-color: #e69aff;
+        right: 10px;
+        position: absolute;
+        border-radius: 10px;
+        padding: 10px 20px;
+        min-width: 150px;
+        top: 60px;
     }
     .nav-links li {
         text-align: center;
@@ -56,7 +60,9 @@ body {
         display: flex;
     }
 }
-
+html {
+    scroll-behavior: smooth;
+}
 .hero {
     display: flex;
     justify-content: space-between;
@@ -69,11 +75,13 @@ body {
 .hero-text {
     flex: 1;
     max-width: 50%;
+    text-align: center;
 }
 .hero-text h1 {
     font-size: 2.5rem;
     font-weight: bold;
     color: aliceblue;
+    margin-top: -50px;
 }
 .hero-text p{
     font-size: 1.2rem;
@@ -84,3 +92,497 @@ body {
     width: 300px;
     border-radius: 15px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+.about{
+    display: flex;
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    min-height: 60vh;
+    width: 80%;
+    margin: 40px auto;
+    padding: 50px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+.about-img img{
+    max-width:280px;
+    border-radius: 20px;
+}
+.about-text{
+    flex: 1;
+    max-width: 50%;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    text-align: justify;
+}
+.skills {
+    padding: 50px 20px;
+    text-align: center;
+}
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.tab {
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: 2px solid white;
+    background-color: #e69aff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.tab.active {
+    background: #a18cd1;
+    color:white;
+}
+.soft-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.soft-card {
+    background: #e69aff;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    font-weight: 500;
+}
+.soft-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+.hard-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+.hard-card {
+    background: #e69aff;
+    color: #fff;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    font-weight: 500;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    align-items: center;
+}
+.hard-card img {
+    max-width: 50px;
+    max-height: 50px;
+    object-fit: contain;
+    margin-bottom: 8px;
+}
+.hard-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+.tab-content {
+    display: none;
+    margin: 0 auto;
+    text-align: left;
+    max-width: 600px;
+    padding: 20px;
+}
+.tab-content.active {
+    display: block;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.experience {
+    padding: 50px 20px;
+    text-align: center;
+    background: transparent;
+}
+.exp-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.exp-card {
+    background: #e69aff;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    width: 250px;
+    height: 200px;
+    animation: pulse 2s infinite;
+}
+.exp-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+.modal-experience-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-active {
+    display: flex;
+}
+.modal-content {
+    background: #fefefe;
+    color: black;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%;
+    border-radius: 10px;
+    position: relative;
+    text-align: left;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+.close {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    float: right;
+}
+.click-hint {
+    font-size: 12px;
+    color: #333;
+    margin-top: 10px;
+    text-align: center;
+    font-style: italic;
+}
+.exp-layout {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.exp-text {
+    flex: 1;
+    font-size: 14px;
+    line-height: 1.6;
+}
+.exp-gallery {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+.exp-gallery img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    object-fit: cover;
+}
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(100, 100, 225, 0.5);}
+    70% { box-shadow: 0 0 0 10px rgba(100, 100, 225, 0);}
+    100% { box-shadow: 0 0 0 0 rgba(100, 100, 225, 0);}
+}
+/* Layout Grid */
+.proj-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.proj-card {
+    background: pink;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+/* Modal / Pop-up */
+.modal-proj-modal {
+    display: none; 
+    position: fixed;
+    z-index: 1000;
+    left: 0; top: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.8); /* Gelap transparan */
+    backdrop-filter: blur(5px);
+}
+.modal-content-proj {
+    background: #333; /* Background gelap */
+    margin: 5% auto;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 12px;
+    color: white;
+}
+.modal-header {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #444;
+}
+.modal-inner-body {
+    background: #fff;
+    color: #333;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.modal-inner-body img {
+    width: 100%;
+    border-radius: 8px;
+}
+.proj-text {
+    flex: 1;
+    font-size: 14px;
+    line-height: 1.6;
+}
+/* Container Grid */
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+}
+/* Gaya Tombol Filter */
+.cert-filter {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.filter-btn {
+    padding: 8px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+    transition: 0.3s;
+}
+.filter-btn.active, .filter-btn:hover {
+    background: white;
+    color: #a18cd1;
+}
+.btn-download {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #a18cd1;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.btn-download:hover {
+    background-color: #ff9a9e;
+    transform: scale(1.05);
+}
+/* Badge Kategori */
+.badge {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 11px;
+    margin-top: 5px;
+    color: white;
+}
+.certification { background: #db2777; }
+.bootcamp { background: #2563eb; }
+.organisasi { background: #16a34a; }
+.intern { background: #ea580c; }
+/* Sembunyikan kartu yang tidak difilter */
+.cert-card.hide {
+    display: none;
+}
+/* Kartu Sertifikat */
+.cert-card {
+    background: #e0e0e0; /* Warna abu-abu muda seperti background gambar */
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: transform 0.3s;
+    text-align: left;
+    padding-bottom: 15px;
+    transition: all 0.3s ease-in-out;
+}
+.cert-card:hover {
+    transform: translateY(-10px);
+}
+.cert-card img {
+    width: 90%;
+    margin: 15px auto;
+    display: block;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.cert-date {
+    font-size: 12px;
+    color: #666; /* Warna abu-abu agar tidak terlalu mencolok */
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.cert-date i {
+    color: #a18cd1; /* Warna ikon kalender sesuai tema kamu */
+}
+.cert-body {
+    padding: 0 20px;
+}
+.cert-body h3 {
+    font-size: 18px;
+    margin: 10px 0 5px;
+    color: #222;
+}
+.cert-body .issuer {
+    font-size: 14px;
+    color: #444;
+    margin: 0;
+}
+.cert-body .date {
+    font-size: 13px;
+    color: #777;
+}
+.view-link {
+    color: #2563eb;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+/* Modal Styling (Gambar 2) */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0; top: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.8);
+    backdrop-filter: blur(5px);
+}
+.modal-window {
+    background: #333;
+    margin: 50px auto;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.modal-header {
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    color: #bbb;
+    font-size: 14px;
+}
+.modal-inner {
+    background: white;
+    margin: 15px;
+    padding: 25px;
+    border-radius: 10px;
+}
+.modal-inner img {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    margin-bottom: 15px;
+}
+.close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+.cert-card.hide{
+    display: none;
+}
+.hidden-cert {
+    display: none;
+}
+.see-more-btn {
+    display: inline-block;
+    cursor: pointer;
+    min-width: 150px;
+    padding: 10px 25px;
+    background-color: white; /* Beri warna kontras */
+    color: #a18cd1; /* Warna teks senada tema */
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+/* Contact Section Styling */
+.contact {
+    padding: 60px 20px;
+    text-align: center;
+    color: white;
+}
+.contact h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.contact p {
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Agar responsif di HP */
+}
+.contact-box {
+    background: rgba(255, 255, 255, 0.2); /* Transparan putih */
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 20px 40px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    min-width: 120px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.contact-box i {
+    font-size: 2.5rem;
+}
+.contact-box span {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+/* Efek Hover */
+.contact-box:hover {
+    transform: translateY(-10px);
+    background: white;
+    color: #a18cd1; /* Warna menyesuaikan gradienmu */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+/* Warna spesifik saat hover (opsional) */
+.contact-box:hover i.fa-linkedin { color: #0077b5; }
+.contact-box:hover i.fa-instagram { color: #e4405f; }
+.contact-box:hover i.fa-envelope { color: #db4437; }
