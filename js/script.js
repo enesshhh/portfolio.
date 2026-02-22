@@ -46,19 +46,17 @@ function filterCert(category) {
     // 2. Logika Filter
     cards.forEach(card => {
         if (category === 'all') {
-            // Jika pilih "All", tampilkan yang utama, sembunyikan yang 'hidden-cert'
             if (card.classList.contains('hidden-cert')) {
                 card.style.display = "none";
-                card.classList.remove('hide'); // Reset state filter
+                card.classList.remove('hide'); 
             } else {
                 card.style.display = "block";
                 card.classList.remove('hide');
             }
-            // Munculkan tombol See More lagi
+            // tombol See More lagi
             seeMoreBtn.style.display = "inline-block";
             seeMoreBtn.innerText = "See More";
         } else {
-            // Jika pilih kategori tertentu (misal: Bootcamp)
             if (card.dataset.category === category) {
                 card.style.display = "block";
                 card.classList.remove('hide');
@@ -66,7 +64,7 @@ function filterCert(category) {
                 card.style.display = "none";
                 card.classList.add('hide');
             }
-            // Sembunyikan tombol See More karena filter kategori menampilkan semua hasil
+            // Sembunyikan tombol See More
             seeMoreBtn.style.display = "none";
         }
     });
@@ -77,22 +75,19 @@ function toggleCerts() {
     const seeMoreBtn = document.getElementById('see-more-btn');
 
     if (seeMoreBtn.innerText === "See More") {
-        // Aksi Tampilkan: Ubah display jadi block
         hiddenCards.forEach(card => {
             card.style.display = "block";
         });
         seeMoreBtn.innerText = "See Less";
     } else {
-        // Aksi Sembunyikan: Balikkan display jadi none
         hiddenCards.forEach(card => {
             card.style.display = "none";
         });
         seeMoreBtn.innerText = "See More";
-        // Scroll balik ke atas section sertifikat
         document.getElementById('certificate').scrollIntoView({ behavior: 'smooth' });
     }
 }
-// Menutup modal jika klik di luar box
+// Menutup modal
 window.onclick = function(event) {
     if (event.target.className === 'modal-experience-modal' || 
         event.target.className === 'modal-proj-modal' || 
